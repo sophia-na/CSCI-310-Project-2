@@ -12,6 +12,10 @@ Brian Bares
 
 Shokoufeh Namazian
 
+1. I finished  black box test for search button and bar.
+2. I started working on simple design .
+3. We have not started doing 4 xp programming practice yet. SO hopefully we can finish it for scrum 2.
+
 
 Matthew van Niekerk
 
