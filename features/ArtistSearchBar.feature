@@ -10,7 +10,7 @@ Feature: IEEE Search Bar
 	Scenario: There are more than three characters in the textbox
 		Given there are more than three characters in the textbox
 		Then the suggestions drop-down should be visible below the textbox
-		And there should be at least three artists in the drop-down
+		And there should be at least three in the drop-down
 
 	Scenario: An IEEE is chosen from the drop-down
 		Given an IEEE is chosen from the drop-down
