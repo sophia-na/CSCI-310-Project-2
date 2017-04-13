@@ -69,7 +69,7 @@
 			
 			var artists = []; // required by Word Cloud Page and on
 			var songs = []; // required by Word Cloud Page and on
-			var word = ""; // required by Song List Page and on
+			var word = ""; // required by Paper List Page and on
 			var song = {}; // required by Lyrics Page and on
 			
 			////
@@ -78,9 +78,9 @@
 			
 			$(function() {
 				// Prepare all the pages
-				preparePage("artistSearch", "pages/artistSearchPage.html");
+				preparePage("paperSearch", "pages/paperSearchPage.html");
 				preparePage("wordCloud", "pages/wordCloudPage.html");
-				preparePage("songList", "pages/songListPage.html");
+				preparePage("paperList", "pages/paperListPage.html");
 				preparePage("lyrics", "pages/lyricsPage.html");
 				
 				$.ajax({ // Load all artist metadata from the server
@@ -92,7 +92,7 @@
 					}
 				});
 				
-				loadPage("artistSearch"); // Display the first page
+				loadPage("paperSearch"); // Display the first page
 			});
 			
 		</script>

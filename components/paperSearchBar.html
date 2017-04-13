@@ -8,7 +8,7 @@ An Artist Search Bar will provide the 'yesSelection' and 'noSelection' events.
 
 -->
 
-<input type="text" id="artistSearchTextField" />
+<input type="text" id="paperSearchTextField" />
 
 <style>
 	.ui-helper-hidden-accessible {
@@ -29,7 +29,7 @@ An Artist Search Bar will provide the 'yesSelection' and 'noSelection' events.
 		background-color: #DDD;
 	}
 
-	#artistSearchTextField {
+	#paperSearchTextField {
 		width: 100%;
 		padding: 1em;
 		
@@ -42,7 +42,7 @@ An Artist Search Bar will provide the 'yesSelection' and 'noSelection' events.
 
 <script>
 	
-	var searchBar = $("#artistSearchTextField").parent();
+	var searchBar = $("#paperSearchTextField").parent();
 	
 	// Define a search object that is correctly formatted for the jQuery UI autocomplete widget
 	// This object is a transformation of the allArtists global object
@@ -57,7 +57,7 @@ An Artist Search Bar will provide the 'yesSelection' and 'noSelection' events.
 	});
 	
 	// Create the autocomplete
-	$("#artistSearchTextField").autocomplete({
+	$("#paperSearchTextField").autocomplete({
 		minLength: 4,
 		source: searchObject,
 		response: function(event, ui) { // before display suggestions
@@ -71,7 +71,7 @@ An Artist Search Bar will provide the 'yesSelection' and 'noSelection' events.
 		select: function(event, ui) { // on select
 			
 			// Update values
-			$("#artistSearchTextField").val(ui.item.label);
+			$("#paperSearchTextField").val(ui.item.label);
 			searchBar.attr("value", ui.item.value);
 			
 			searchBar.trigger("yesSelection"); // artist selected
@@ -98,7 +98,7 @@ An Artist Search Bar will provide the 'yesSelection' and 'noSelection' events.
 	};
 	
 	searchBar.on('clear', function() {
-		$("#artistSearchTextField").val("");
+		$("#paperSearchTextField").val("");
 		searchBar.trigger("noSelection");
 	})
 	

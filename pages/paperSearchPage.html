@@ -1,7 +1,7 @@
-<div id="artistSearchPage">
+<div id="paperSearchPage">
 	   
     <h1>IEEE Cloud</h1>
-	<div id="artistSearchBar"></div>
+	<div id="paperSearchBar"></div>
 
 	<input type="button" id="search" class="button" value="Search" disabled="true"  />
 
@@ -10,7 +10,7 @@
 
 <style>
 
-#artistSearchPage {
+#paperSearchPage {
 	text-align: center;
 	margin: auto;
 	
@@ -19,7 +19,7 @@
 	padding-bottom: 20%;
 }
 
-#artistSearchBar {
+#paperSearchBar {
 	width: 33%;
 	padding: 1em;
 }
@@ -28,8 +28,8 @@
 
 <script>
 
-	$("#artistSearchBar")
-		.load("components/artistSearchBar.html")
+	$("#paperSearchBar")
+		.load("components/paperSearchBar.html")
 		.on("yesSelection", function() {		
 			$("#search").removeProp("disabled");
 		})
@@ -39,7 +39,7 @@
 
 	$("#search").click(function() {
 		
-		var artistID = $("#artistSearchBar").attr("value");
+		var artistID = $("#paperSearchBar").attr("value");
 		artists = [allArtists[artistID]]
 	
 		loadPage("wordCloud");

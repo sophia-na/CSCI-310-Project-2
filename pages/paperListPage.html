@@ -1,16 +1,16 @@
-<div id="songListPage">
+<div id="paperListPage">
 
 	<a id="backToWordCloud">Back to Word Cloud</a>
 	
-	<h1 id="songListTitle"  >Song List Page</h1>
+	<h1 id="paperListTitle"  >Paper List Page</h1>
 	
-	<ul id="songList"></ul>
+	<ul id="paperList"></ul>
 	
 </div>
 
 <style>
 
-#songListPage {
+#paperListPage {
 	
 	width: 75%;
 	margin: auto;
@@ -19,11 +19,11 @@
 	margin-top: 25px;
 }
 
-#songListTitle {
+#paperListTitle {
 	margin-top: 25px;
 }
 
-#songList {
+#paperList {
 	line-height: 200%;
 	/*
 	background-color: white;
@@ -69,13 +69,13 @@ h1 {
 	// Set the title (of document and header)
 	var title = word.charAt(0).toUpperCase() + word.substring(1);
 	document.title = title;
-	$("#songListTitle").text(title);
+	$("#paperListTitle").text(title);
 	
-	// Set up Song List
+	// Set up Paper List
 	
 	$.each(songs, function(index, song) { // count the word in each song
 		
-		// Count the occurances of the word
+		// Count the occurrences of the word
 		var wordMatches = song.lyrics.match(regexForWord(word));
 		song.wordCount = 0;
 		if (wordMatches != null) {
@@ -89,13 +89,13 @@ h1 {
 	
 	$.each(songs, function(index, song) { // add each song to the list
 		if (song.wordCount > 0) {
-			$("#songList").append("<li><a class='songListLink' value='" + index + "'>" + song.title + "</a> by " + song.artist + " (" + song.wordCount + " occurances)</li>");
+			$("#paperList").append("<li><a class='paperListLink' value='" + index + "'>" + song.title + "</a> by " + song.artist + " (" + song.wordCount + " occurrences)</li>");
 		}
 	})
 	
 	// set up links
 	
-	$(".songListLink").click(function() {
+	$(".paperListLink").click(function() {
 		song = songs[$(this).attr("value")];
 			
 		loadPage("lyrics");
