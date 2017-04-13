@@ -7,3 +7,11 @@ Shokoufeh Namazian
 1. I started the acceptable test black box testing with search bar and search button
 2. I start working on tests for the project and trying to do design practice as xp practice
 3. I am waiting for the group to start pair practicing and try different approach of xp practice.
+
+Brian Bares
+1) Continued poking around the code, changed a few variable names to begin transitioning project 1 code to project 2 code.
+Nothing serious at all, just a few superficial changes to begin adapting the code. Still no idea WTF I'm doing with it though,
+especially because we haven't even gotten an API to get the papers off ACM/IEEE so we can't change anything else at the moment.
+2) Will begin to research APIs we could use. Continue learning more front-end stuff
+3) Assignments from other class might get in the way this weekend! Also this code is really confusing because I don't have
+the necessary brainpower for it apparently
