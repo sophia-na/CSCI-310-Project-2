@@ -1,0 +1,9 @@
+QUESTIONS
+1) What did I do yesterday that helped the Development Team meet the Sprint Goal?
+2) What will I do today to help the Development Team meet the Sprint Goal?
+3) Do I see any impediment that prevents me or the Development Team from meeting the Sprint Goal?
+
+Shokoufeh Namazian
+1. I started the acceptable test black box testing with search bar and search button
+2. I start working on tests for the project and trying to do design practice as xp practice
+3. I am waiting for the group to start pair practicing and try different approach of xp practice.
