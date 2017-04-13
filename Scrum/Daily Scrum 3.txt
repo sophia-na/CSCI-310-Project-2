@@ -15,3 +15,8 @@ especially because we haven't even gotten an API to get the papers off ACM/IEEE 
 2) Will begin to research APIs we could use. Continue learning more front-end stuff
 3) Assignments from other class might get in the way this weekend! Also this code is really confusing because I don't have
 the necessary brainpower for it apparently
+
+Arman Akhbari
+1) Finished writing the sprint backlog.
+2) Started working on other parts of the documents such as team members and etc.
+3) Very busy schedule next couple of days might slow down my progression
