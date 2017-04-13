@@ -3,10 +3,11 @@ QUESTIONS
 2) What will I do today to help the Development Team meet the Sprint Goal?
 3) Do I see any impediment that prevents me or the Development Team from meeting the Sprint Goal?
 
-Shokoufeh Namazian
-1. I started the acceptable test black box testing with search bar and search button
-2. I start working on tests for the project and trying to do design practice as xp practice
-3. I am waiting for the group to start pair practicing and try different approach of xp practice.
+ANSWERS
+Arman Akhbari
+1) Finished writing the sprint backlog.
+2) Started working on other parts of the documents such as team members and etc.
+3) Very busy schedule next couple of days might slow down my progression
 
 Brian Bares
 1) Continued poking around the code, changed a few variable names to begin transitioning project 1 code to project 2 code.
@@ -16,10 +17,10 @@ especially because we haven't even gotten an API to get the papers off ACM/IEEE 
 3) Assignments from other class might get in the way this weekend! Also this code is really confusing because I don't have
 the necessary brainpower for it apparently
 
-Arman Akhbari
-1) Finished writing the sprint backlog.
-2) Started working on other parts of the documents such as team members and etc.
-3) Very busy schedule next couple of days might slow down my progression
+Shokoufeh Namazian
+1. I started the acceptable test black box testing with search bar and search button
+2. I start working on tests for the project and trying to do design practice as xp practice
+3. I am waiting for the group to start pair practicing and try different approach of xp practice.
 
 Matthew van Niekerk
 1) Updated the burndown chart and continued tutorials.
