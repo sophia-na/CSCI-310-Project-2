@@ -8,6 +8,12 @@ Arman Akhbari
 
 
 Brian Bares
+1) Uhh I haven't really done anything since the last scrum since the last scrum was right before I went to bed, then I had
+class in the morning and lab prep in the afternoon...
+2) Will work on my goals from yesterday (look for API to find papers/extract their words and how to use it, continue
+through tutorials)
+3) Final project for my other class is cutting into my time. Most of my free time is on the weekend but condensing
+all my contributions into the last few days before a sprint deadline isn't really working
 
 
 Shokoufeh Namazian
