@@ -5,6 +5,9 @@ QUESTIONS
 
 ANSWERS
 Arman Akhbari
+1) I finished the sprint backlog for the document up to date, however I will be editing it as we move forward.
+2) working on the Scrum part of the document.
+3) we are really behind schedule in terms of coding and still havent got any code to work properly.
 
 
 Brian Bares
