@@ -9,7 +9,7 @@
     	</div>
     
 	<div id="searchControls">
-		<div id="artistSearchBar"></div>
+		<div id="paperSearchBar"></div>
 		
 		<input type="button" id="search" class="button"  value="Search"  disabled="true" />
 		
@@ -175,7 +175,7 @@
 					.text(function(d) { return d.text; })
 					.on("click", function(d, i) {
 						word = d.text;
-						loadPage("songList");
+						loadPage("paperList");
 					});
 
 				$("#wordCloudLoading").hide(0);
@@ -289,8 +289,8 @@
 	}
 	
 	// Set up the Artist Search Bar
-	$("#artistSearchBar")
-		.load("components/artistSearchBar.html")
+	$("#paperSearchBar")
+		.load("components/paperSearchBar.html")
 		.on("yesSelection", function() {		
 			$("#search").removeProp("disabled");
 			$("#add").removeProp("disabled");
@@ -303,18 +303,18 @@
 	// Set up the Search Button
 	$('#search').click(function() {
 		
-		$("#artistSearchBar").trigger('clear');
+		$("#paperSearchBar").trigger('clear');
 		
-		var artistID = $("#artistSearchBar").attr("value");
+		var artistID = $("#paperSearchBar").attr("value");
 		searchArtists([allArtists[artistID]]);
 	});
 	
 	// Set up the Add Button
 	$('#add').click(function() {
 		
-		$("#artistSearchBar").trigger('clear');
+		$("#paperSearchBar").trigger('clear');
 		
-		var artistID = $("#artistSearchBar").attr("value");
+		var artistID = $("#paperSearchBar").attr("value");
 		addArtist(allArtists[artistID]);
 	});
 

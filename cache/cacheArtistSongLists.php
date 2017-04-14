@@ -5,7 +5,7 @@ require("multiRequest.php");
 $artists = json_decode(file_get_contents("artists.json"), true);
 $artists_values = array_values($artists);
 
-// STEP 3 Artist Elimination Process: query each artist's song list -- eliminate artists that have no lyrics available
+// STEP 3 Artist Elimination Process: query each artist's Paper List -- eliminate artists that have no lyrics available
 
 $batch = 100;
 
@@ -18,12 +18,12 @@ for (; $start < count($artists_values); $start+=$batch) { // For each batch:
 	
 	echo $start . '/' . count($artists_values) . " artists complete.\n";
 	
-	$songListPageURLs = array();
+	$paperListPageURLs = array();
 	for ($i=$start; $i<$start+$batch and $i<count($artists_values); $i++) {
-		$songListPageURLs[] = 'http://www.chartlyrics.com/' . $artists_values[$i]['chartLyricsID'] . '.aspx';
+		$paperListPageURLs[] = 'http://www.chartlyrics.com/' . $artists_values[$i]['chartLyricsID'] . '.aspx';
 	}
 
-	$responses = multiRequest($songListPageURLs); // Execution holds here until all the requests are completed
+	$responses = multiRequest($paperListPageURLs); // Execution holds here until all the requests are completed
 	
 	for ($i = $start; $i<$start+$batch and $i<count($artists_values); $i++) {
 		// look at the ith artist/response

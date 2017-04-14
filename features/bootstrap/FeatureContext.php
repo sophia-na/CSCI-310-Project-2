@@ -18,8 +18,8 @@ class FeatureContext implements Context
 	
 	public $page;
 
-	public $artistSearchBar;
-	public $artistSearchTextField;
+	public $paperSearchBar;
+	public $paperSearchTextField;
     public $searchButton;
 
 	/**
@@ -39,8 +39,8 @@ class FeatureContext implements Context
 		$this->session->visit('http://localhost:80/LyricsCloud/');
 		$this->page = $this->session->getPage();
 
-		$this->artistSearchBar = $this->page->find("css", "#artistSearchBar");
-		$this->artistSearchTextField = $this->artistSearchBar->find("css", "#artistSearchTextField");
+		$this->paperSearchBar = $this->page->find("css", "#paperSearchBar");
+		$this->paperSearchTextField = $this->paperSearchBar->find("css", "#paperSearchTextField");
 
         $this->searchButton = $this->page->find("css", "#search");
 	}
@@ -53,19 +53,19 @@ class FeatureContext implements Context
 	/**
 	* @Given there is an artist search bar
 	*/
-	public function thereIsAnArtistSearchBar()
+	public function thereIsAnpaperSearchBar()
 	{
-		assertNotEquals(null, $this->artistSearchBar);
-		// $this->artistSearchBar = $this->page->find("css", "#artistSearchBar");
+		assertNotEquals(null, $this->paperSearchBar);
+		// $this->paperSearchBar = $this->page->find("css", "#paperSearchBar");
 	}
 
 	/**
 	* @Then the artist search bar should be empty
 	*/
-	public function theArtistSearchBarShouldBeEmpty()
+	public function thepaperSearchBarShouldBeEmpty()
 	{
 
-		assertEquals("", $this->artistSearchTextField->getValue());
+		assertEquals("", $this->paperSearchTextField->getValue());
 	}
 
 	/**
@@ -73,7 +73,7 @@ class FeatureContext implements Context
     */
     public function thereAreMoreThanThreeCharactersInTheTextbox()
     {
-    	$this->artistSearchTextField->setValue('The Bea');
+    	$this->paperSearchTextField->setValue('The Bea');
         sleep(3);
     }
 
@@ -109,7 +109,7 @@ class FeatureContext implements Context
      */
     public function anArtistIsChosenFromTheDropDown()
     {
-        $this->artistSearchTextField->setValue('The Bea');
+        $this->paperSearchTextField->setValue('The Bea');
         sleep(3);
 
         $this->suggestions = $this->page->find("css", "#ui-id-1");
@@ -126,15 +126,15 @@ class FeatureContext implements Context
     {
         sleep(0.5);
 
-        assertEquals("The Beach Boys", $this->artistSearchTextField->getValue());
+        assertEquals("The Beach Boys", $this->paperSearchTextField->getValue());
     }
 
     /**
      * @Given the Artist Search Bar has three or fewer characters
      */
-    public function theArtistSearchBarHasThreeOrFewerCharacters()
+    public function thepaperSearchBarHasThreeOrFewerCharacters()
     {
-        $this->artistSearchTextField->setValue('the');
+        $this->paperSearchTextField->setValue('the');
     }
 
     /**
@@ -148,9 +148,9 @@ class FeatureContext implements Context
     /**
      * @Given the Artist Search Bar has more than three characters
      */
-    public function theArtistSearchBarHasMoreThanThreeCharacters()
+    public function thepaperSearchBarHasMoreThanThreeCharacters()
     {
-        $this->artistSearchTextField->setValue('the ');
+        $this->paperSearchTextField->setValue('the ');
         sleep(3);
     }
 
@@ -167,7 +167,7 @@ class FeatureContext implements Context
      */
     public function theSearchButtonIsClicked()
     {
-        $this->artistSearchTextField->setValue('The Beach Boys');
+        $this->paperSearchTextField->setValue('The Beach Boys');
 
         sleep(1.5);
 
