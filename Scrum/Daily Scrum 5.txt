@@ -5,7 +5,9 @@ QUESTIONS
 
 ANSWERS
 Arman Akhbari
-
+1) I finished editing most of the document.
+2) Did pair programming with shokoufeh, but couldnt do much since we both are not familiar with coding.
+3) Lack of knowledge in PHP, JavaScript API's will not let us program anything and that is hurting everybody.
 
 Brian Bares
 
