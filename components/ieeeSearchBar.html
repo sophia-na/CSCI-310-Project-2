@@ -1,14 +1,14 @@
 <!--
 
-Load this document into a div to turn that div into an Artist Search Bar.
+Load this document into a div to turn that div into an ieee Search Bar.
 
-An Artist Search Bar responds to the 'clear' event.
+An ieee Search Bar responds to the 'clear' event.
 
-An Artist Search Bar will provide the 'yesSelection' and 'noSelection' events.
+An ieee Search Bar will provide the 'yesSelection' and 'noSelection' events.
 
 -->
 
-<input type="text" id="paperSearchTextField" />
+<input type="text" id="ieeeSearchTextField" />
 
 <style>
 	.ui-helper-hidden-accessible {
@@ -29,7 +29,7 @@ An Artist Search Bar will provide the 'yesSelection' and 'noSelection' events.
 		background-color: #DDD;
 	}
 
-	#paperSearchTextField {
+	#ieeeSearchTextField {
 		width: 100%;
 		padding: 1em;
 		
@@ -42,7 +42,7 @@ An Artist Search Bar will provide the 'yesSelection' and 'noSelection' events.
 
 <script>
 	
-	var searchBar = $("#paperSearchTextField").parent();
+	var searchBar = $("#ieeeSearchTextField").parent();
 	
 	// Define a search object that is correctly formatted for the jQuery UI autocomplete widget
 	// This object is a transformation of the allArtists global object
@@ -57,7 +57,7 @@ An Artist Search Bar will provide the 'yesSelection' and 'noSelection' events.
 	});
 	
 	// Create the autocomplete
-	$("#paperSearchTextField").autocomplete({
+	$("#ieeeSearchTextField").autocomplete({
 		minLength: 4,
 		source: searchObject,
 		response: function(event, ui) { // before display suggestions
@@ -71,7 +71,7 @@ An Artist Search Bar will provide the 'yesSelection' and 'noSelection' events.
 		select: function(event, ui) { // on select
 			
 			// Update values
-			$("#paperSearchTextField").val(ui.item.label);
+			$("#ieeeSearchTextField").val(ui.item.label);
 			searchBar.attr("value", ui.item.value);
 			
 			searchBar.trigger("yesSelection"); // artist selected
@@ -98,7 +98,7 @@ An Artist Search Bar will provide the 'yesSelection' and 'noSelection' events.
 	};
 	
 	searchBar.on('clear', function() {
-		$("#paperSearchTextField").val("");
+		$("#ieeeSearchTextField").val("");
 		searchBar.trigger("noSelection");
 	})
 	
