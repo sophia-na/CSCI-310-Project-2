@@ -10,7 +10,9 @@ Arman Akhbari
 3) Lack of knowledge in PHP, JavaScript API's will not let us program anything and that is hurting everybody.
 
 Brian Bares
-
+1) Briefly looked into APIs we could use for the project. I think I might have found things we can use (search for papers, convert pdf to text... is that even needed? I have no idea but I'm assuming you can't just scrape all the text off the thing unless it's in plaintext, so maybe that's useful), but I have no idea how to actually have the project utilize them.
+2) Try to figure out the problem mentioned in 1).
+3) I really have no idea how to use APIs, and I'm also worried about having to split my coding time with my other CS course.
 
 Shokoufeh Namazian
 
