@@ -1,5 +1,5 @@
-# IEEECloud
-CSCI 310 Team R IEEECloud Project 2
+# IEEE Cloud
+CSCI 310 Team R IEEE Cloud Project 2
 
 Arman Akhbari
 
