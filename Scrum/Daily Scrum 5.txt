@@ -12,6 +12,10 @@ Brian Bares
 
 Shokoufeh Namazian
 
+1.I continued working on design.
+2.Today I did pair programming  with Arman 
+3. The group should follow the xp programming for sprint2 to finish it. 
+
 
 Matthew van Niekerk
 1) I had to spend all my time on a CSCI 356 assignment, so I did nothing in the last day to help the team reach the goal.
