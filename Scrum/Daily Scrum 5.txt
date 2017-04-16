@@ -14,4 +14,6 @@ Shokoufeh Namazian
 
 
 Matthew van Niekerk
-
+1) I had to spend all my time on a CSCI 356 assignment, so I did nothing in the last day to help the team reach the goal.
+2) Update burndown chart; continue tutorials; try to connect APIs.
+3) Insufficient knowledge and experience of PHP, JavaScript, APIs, and web development.
