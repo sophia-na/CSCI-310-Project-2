@@ -9,7 +9,7 @@
     	</div>
     
 	<div id="searchControls">
-		<div id="paperSearchBar"></div>/// should be ieeeSearchBar
+		<div id="ieeeSearchBar"></div>/// should be ieeeSearchBar
 		
 		<input type="button" id="search" class="button"  value="Search"  disabled="true" />
 		
@@ -289,8 +289,8 @@
 	}
 	
 	// Set up the Artist Search Bar
-	$("#paperSearchBar") ///ieeeSearchBar
-		.load("components/paperSearchBar.html")
+	$("#ieeeSearchBar") ///ieeeSearchBar
+		.load("components/ieeeSearchBar.html")
 		.on("yesSelection", function() {		
 			$("#search").removeProp("disabled");
 			$("#add").removeProp("disabled");
@@ -303,18 +303,18 @@
 	// Set up the Search Button
 	$('#search').click(function() {
 		
-		$("#paperSearchBar").trigger('clear');
+		$("#ieeeSearchBar").trigger('clear');
 		
-		var artistID = $("#paperSearchBar").attr("value");
+		var artistID = $("#ieeeSearchBar").attr("value");
 		searchArtists([allArtists[artistID]]);
 	});
 	
 	// Set up the Add Button
 	$('#add').click(function() {
 		
-		$("#paperSearchBar").trigger('clear');
+		$("#ieeeeSearchBar").trigger('clear');
 		
-		var artistID = $("#paperSearchBar").attr("value");
+		var artistID = $("#ieeeSearchBar").attr("value");
 		addArtist(allArtists[artistID]);
 	});
 
