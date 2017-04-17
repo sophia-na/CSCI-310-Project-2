@@ -5,7 +5,9 @@ QUESTIONS
 
 ANSWERS
 Arman Akhbari
-
+1)I edited more of the document.
+2)I finalized the process document and made sure it is t=ready to be turned in.
+3)There is nothing any of us can do. GGWP.
 
 Brian Bares
 
@@ -17,6 +19,8 @@ Shokoufeh Namazian
 3. We are so far behind coding , our knowledges are not enough as a group of 4 people.
 
 
+=======
+>>>>>>> origin/master
 
 Matthew van Niekerk
 
