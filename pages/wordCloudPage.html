@@ -9,7 +9,7 @@
     	</div>
     
 	<div id="searchControls">
-		<div id="paperSearchBar"></div>
+		<div id="paperSearchBar"></div>/// should be ieeeSearchBar
 		
 		<input type="button" id="search" class="button"  value="Search"  disabled="true" />
 		
@@ -289,7 +289,7 @@
 	}
 	
 	// Set up the Artist Search Bar
-	$("#paperSearchBar")
+	$("#paperSearchBar") ///ieeeSearchBar
 		.load("components/paperSearchBar.html")
 		.on("yesSelection", function() {		
 			$("#search").removeProp("disabled");
