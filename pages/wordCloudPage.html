@@ -9,7 +9,7 @@
     	</div>
     
 	<div id="searchControls">
-		<div id="ieeeSearchBar"></div>/// should be ieeeSearchBar
+		<div id="ieeeSearchBar"></div>
 		
 		<input type="button" id="search" class="button"  value="Search"  disabled="true" />
 		
@@ -175,7 +175,7 @@
 					.text(function(d) { return d.text; })
 					.on("click", function(d, i) {
 						word = d.text;
-						loadPage("paperList");
+						loadPage("songList");
 					});
 
 				$("#wordCloudLoading").hide(0);
