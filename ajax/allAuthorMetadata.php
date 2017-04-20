@@ -19,4 +19,4 @@ Should return a JSON object of the form:
 
 */
 
-echo file_get_contents("../cache/artists.json");
+echo file_get_contents("../cache/authors.json");

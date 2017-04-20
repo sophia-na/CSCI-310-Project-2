@@ -1,0 +1,63 @@
+<div id="paperPage">
+    
+    <a id="backToWordCloud">Back to Word Cloud</a>
+	<a id="backToPaperList">Back to List of Papers</a>
+    <h1 id="paperTitle">Paper Page</h1>
+    <div id="paper"></div>
+    
+</div>
+
+<style>
+
+#paperPage {
+	text-align: center;
+	margin-top: 25px;
+}
+
+#backToWordCloud {
+	margin-right: 25px;
+}
+
+#paperTitle {
+	margin-top: 25px;
+}
+
+#paper {
+	/*
+	background-color: white;
+	border: 2px black solid;
+	width: 800px;
+	*/
+	margin: auto;
+	padding: 10px;
+	line-height: 150%;
+}
+
+.highlight {
+	background-color: yellow;
+}
+
+</style>
+
+<script>
+
+	// Set the title (of document and header)
+	var title = paper.title + " by " + paper.author;
+	document.title = title;
+	$("#paperTitle").text(title);
+
+	// Highlight the words
+	var highlightedWords = paper.words.replace(regexForWord(word), function(match) {	
+		return "<span class='highlight'>" + match + "</span>";
+	});
+	$("#paper").html(highlightedWords);
+	
+	// Set up back buttons
+	$("#backToWordCloud").click(function() {
+		loadPage("wordCloud");
+	});
+	$("#backToPaperList").click(function() {
+		loadPage("paperList");
+	});
+	
+</script>

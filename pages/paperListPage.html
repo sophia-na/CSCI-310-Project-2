@@ -1,16 +1,16 @@
-<div id="songListPage">
+<div id="paperListPage">
 
 	<a id="backToWordCloud">Back to Word Cloud</a>
 	
-	<h1 id="songListTitle"  >Song List Page</h1>
+	<h1 id="paperListTitle"  >List of Papers</h1>
 	
-	<ul id="songList"></ul>
+	<ul id="paperList"></ul>
 	
 </div>
 
 <style>
 
-#songListPage {
+#paperListPage {
 	
 	width: 75%;
 	margin: auto;
@@ -19,11 +19,11 @@
 	margin-top: 25px;
 }
 
-#songListTitle {
+#paperListTitle {
 	margin-top: 25px;
 }
 
-#songList {
+#paperList {
 	line-height: 200%;
 	/*
 	background-color: white;
@@ -69,36 +69,36 @@ h1 {
 	// Set the title (of document and header)
 	var title = word.charAt(0).toUpperCase() + word.substring(1);
 	document.title = title;
-	$("#songListTitle").text(title);
+	$("#paperListTitle").text(title);
 	
-	// Set up Song List
+	// Set up Paper List
 	
-	$.each(songs, function(index, song) { // count the word in each song
+	$.each(papers, function(index, paper) { // count the word in each paper
 		
 		// Count the occurances of the word
-		var wordMatches = song.lyrics.match(regexForWord(word));
+		var wordMatches = paper.words.match(regexForWord(word));
 		song.wordCount = 0;
 		if (wordMatches != null) {
-			song.wordCount = wordMatches.length;
+			paper.wordCount = wordMatches.length;
 		}
 	})
 	
-	songs.sort(function(a, b) { // sort songs by word count, descending
+	papers.sort(function(a, b) { // sort papers by word count, descending
 		return b.wordCount - a.wordCount;
 	});
 	
-	$.each(songs, function(index, song) { // add each song to the list
-		if (song.wordCount > 0) {
-			$("#songList").append("<li><a class='songListLink' value='" + index + "'>" + song.title + "</a> by " + song.artist + " (" + song.wordCount + " occurances)</li>");
+	$.each(papers, function(index, paper) { // add each paper to the list
+		if (paper.wordCount > 0) {
+			$("#paperList").append("<li><a class='paperListLink' value='" + index + "'>" + paper.title + "</a> by " + paper.author + " (" + paper.wordCount + " occurances)</li>");
 		}
 	})
 	
 	// set up links
 	
-	$(".songListLink").click(function() {
-		song = songs[$(this).attr("value")];
+	$(".paperListLink").click(function() {
+		paper = papers[$(this).attr("value")];
 			
-		loadPage("lyrics");
+		loadPage("words");
 	});
 	
 		

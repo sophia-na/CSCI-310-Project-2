@@ -1,15 +1,15 @@
-<div id="lyricsPage">
+<div id="paperPage">
     
     <a id="backToWordCloud">Back to Word Cloud</a>
-	<a id="backToSongList">Back to Song List</a>
-    <h1 id="lyricsTitle">Lyrics Page</h1>
-    <div id="lyrics"></div>
+	<a id="backToPaperList">Back to List of Papers</a>
+    <h1 id="paperTitle">Paper Page</h1>
+    <div id="paper"></div>
     
 </div>
 
 <style>
 
-#lyricsPage {
+#paperPage {
 	text-align: center;
 	margin-top: 25px;
 }
@@ -18,11 +18,11 @@
 	margin-right: 25px;
 }
 
-#lyricsTitle {
+#paperTitle {
 	margin-top: 25px;
 }
 
-#lyrics {
+#paper {
 	/*
 	background-color: white;
 	border: 2px black solid;
@@ -42,22 +42,22 @@
 <script>
 
 	// Set the title (of document and header)
-	var title = song.title + " by " + song.artist;
+	var title = paper.title + " by " + paper.author;
 	document.title = title;
-	$("#lyricsTitle").text(title);
+	$("#paperTitle").text(title);
 
 	// Highlight the words
-	var highlightedLyrics = song.lyrics.replace(regexForWord(word), function(match) {	
+	var highlightedWords = paper.words.replace(regexForWord(word), function(match) {	
 		return "<span class='highlight'>" + match + "</span>";
 	});
-	$("#lyrics").html(highlightedLyrics);
+	$("#paper").html(highlightedWords);
 	
 	// Set up back buttons
 	$("#backToWordCloud").click(function() {
 		loadPage("wordCloud");
 	});
-	$("#backToSongList").click(function() {
-		loadPage("songList");
+	$("#backToPaperList").click(function() {
+		loadPage("paperList");
 	});
 	
 </script>

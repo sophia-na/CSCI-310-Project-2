@@ -20,7 +20,7 @@ ini_set('memory_limit','1G');
 
 $ids = $_GET['ids'];
 
-$artists = json_decode(file_get_contents("../cache/artists.json"), true);
+$artists = json_decode(file_get_contents("../cache/authors.json"), true);
 
 $songs = array();
 foreach ($ids as $chartLyricsID) {
