@@ -5,13 +5,25 @@ QUESTIONS
 
 ANSWERS
 Arman Akhbari
-
+1)I edited more of the document.
+2)I finalized the process document and made sure it is t=ready to be turned in.
+3)There is nothing any of us can do. GGWP.
 
 Brian Bares
+1) Worked on document
+2) Continue working on document, look at project 1 code and see how they used the APIs so I can hopefully do the same with the new APIs in project 2
+3) deadlines deadlines deadlines
 
 
 Shokoufeh Namazian
 
+1. I did pair programming with Arman.
+2. I work on document sprint 2
+3. We are so far behind coding , our knowledges are not enough as a group of 4 people.
+
+
+=======
+>>>>>>> origin/master
 
 Matthew van Niekerk
 

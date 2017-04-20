@@ -9,7 +9,7 @@
     	</div>
     
 	<div id="searchControls">
-		<div id="paperSearchBar"></div>
+		<div id="ieeeSearchBar"></div>
 		
 		<input type="button" id="search" class="button"  value="Search"  disabled="true" />
 		
@@ -175,7 +175,7 @@
 					.text(function(d) { return d.text; })
 					.on("click", function(d, i) {
 						word = d.text;
-						loadPage("paperList");
+						loadPage("songList");
 					});
 
 				$("#wordCloudLoading").hide(0);
@@ -288,9 +288,15 @@
 		searchAuthors(authors);
 	}
 	
+<<<<<<< HEAD
 	// Set up the Author Search Bar
 	$("#paperSearchBar")
 		.load("components/paperSearchBar.html")
+=======
+	// Set up the Artist Search Bar
+	$("#ieeeSearchBar") ///ieeeSearchBar
+		.load("components/ieeeSearchBar.html")
+>>>>>>> 7024d290c55a518163be64f6e958ffcdad86b50c
 		.on("yesSelection", function() {		
 			$("#search").removeProp("disabled");
 			$("#add").removeProp("disabled");
@@ -303,19 +309,29 @@
 	// Set up the Search Button
 	$('#search').click(function() {
 		
-		$("#paperSearchBar").trigger('clear');
+		$("#ieeeSearchBar").trigger('clear');
 		
+<<<<<<< HEAD
 		var authorID = $("#paperSearchBar").attr("value");
 		searchAuthors([allAuthors[authorID]]);
+=======
+		var artistID = $("#ieeeSearchBar").attr("value");
+		searchArtists([allArtists[artistID]]);
+>>>>>>> 7024d290c55a518163be64f6e958ffcdad86b50c
 	});
 	
 	// Set up the Add Button
 	$('#add').click(function() {
 		
-		$("#paperSearchBar").trigger('clear');
+		$("#ieeeeSearchBar").trigger('clear');
 		
+<<<<<<< HEAD
 		var authorID = $("#paperSearchBar").attr("value");
 		addAuthor(allAuthors[authorID]);
+=======
+		var artistID = $("#ieeeSearchBar").attr("value");
+		addArtist(allArtists[artistID]);
+>>>>>>> 7024d290c55a518163be64f6e958ffcdad86b50c
 	});
 
 	
